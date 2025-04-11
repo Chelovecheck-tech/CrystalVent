@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --dark-green: #1a3a2f;
+    --beige: #f5f0e6;
+    --accent-green: #2d6a4f;
+    --light-beige: #fff9ec;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--dark-green);
+    color: var(--beige);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(245, 240, 230, 0.2);
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(197, 164, 98);
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 1rem;
+    color: var(--beige);
+    opacity: 0.8;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #2d6a4f;
+}
+
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--light-beige);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.phone {
+    background-color: var(--accent-green);
+    color: white;
+}
+
+.gis {
+    background-color: #2b70c9;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid rgba(245, 240, 230, 0.2);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+}
